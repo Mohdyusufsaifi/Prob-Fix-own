@@ -13,7 +13,7 @@ dotenv.config()
 // db.sync()
 app.use(cors({
     credentials:true,
-    origin:'http://localhost:3000'
+    origin:'https://azeem-product.netlify.app'
 }));
 
 app.use(express.json())
