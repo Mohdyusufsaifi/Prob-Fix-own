@@ -1,0 +1,84 @@
+####
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+
+    "name":"Primius",
+    "email":"primus@mail.com",
+    "password":"tri@123",
+    "confpassword":"tri@123",
+    "role":"Admin"
+}
+
+
+#####
+GET  http://localhost:4000/users
+
+#####
+PATCH http://localhost:5000/users/dcd70db0-395b-475d-9b03-b9d0699b9386
+Content-Type: application/json
+
+{
+    "name":"Liyon",
+    "password":"now@213",
+    "confpassword":"now@213"
+}
+
+
+
+#####
+GET http://localhost:5000/user/ea02d816-024a-494a-a489-706f1da7b5db
+
+
+#####
+DELETE http://localhost:5000/users/cbfd5ddb-eaf7-4fd0-a767-e1907415e090
+
+#####
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "Item":"CoConut OIL",
+    "Price":40
+}
+
+
+####
+DELETE http://localhost:4000/products
+
+#####
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email":"gri@email.com",
+    "password":"tri@123"
+}
+
+
+######
+GET http://localhost:4000/users
+Authorization: Bearer 
+
+
+
+#####
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+
+    "name":"Nagto",
+    "email":"Nagto@mail.com",
+    "password":"Nagto@123",
+    "confpassword":"Nagto@123",
+    "role":"User"
+}
+
+#####
+GET http://localhost:5000/products
+
+
+######
+DELETE http://localhost:5000/products/10
